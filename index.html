@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antarctica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css"
+        integrity="sha512-otONSJGv1l0LjJXcgyqi2MeKXtnthkiXAleeQjFJOKYcVD5u+mOuPb7xCnlsb74Ld+N0ONbP7KYRmW2/OWrvaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/light.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css"
+        integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css"
+        integrity="sha512-GRxDpj/bx6/I4y6h2LE5rbGaqRcbTu4dYhaTewlS8Nh9hm/akYprvOTZD7GR+FRCALiKfe8u1gjvWEEGEtoR6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <sl-icon-button name="list" label="nav_menu" class="hamburger"></sl-icon-button>
+        <ul class="navItems">
+            <li class="nav_link"><a class="nav_item" href="#Home">Home</a></li>
+            <li class="nav_link"><a class="nav_item" href="#Geography">Geography</a></li>
+            <li class="nav_link"><a class="nav_item" href="#Inhabitants">Inhabitants</a></li>
+            <li class="nav_link"><a class="nav_item" href="#Explorers">Explorers</a> </li>
+            <li class="nav_link"><a class="nav_item" href="#Climatechange">Climate Change</a></li>
+        </ul>
+        <div class="underline"></div>
+    </nav>
+
+    <div id="fullpage">
+        <section class="section s1">
+            <img src="images/sky.jpg" alt="" class="sky">
+            <!-- Artist Creathrive. n.d  -->
+            <img src="images/ocean.jpg" alt="" class="ocean">
+            <!-- Artist Creathrive. n.d  -->
+            <h1 class="h1">Antarctica</h1>
+            <!-- cloak is transparent div layed over ocean image -->
+            <div class="cloak">
+            </div>
+            <img src="images/ice_berg.png" alt="ice berg image 1" class="ice_berg">
+            <!-- Raw Pixel. n.d.a  -->
+            <img src="images/ice_berg2.png" alt="ice berg image 2" class="ice_berg2">
+            <!-- Raw Pixel. n.d.b  -->
+        </section>
+        <section class="section s2 fp-scrollable">
+            <div class="map_container">
+                <h2 class="h2">Geography</h2>
+                <img src="images/antarctica_map.png" alt="antarctica map" class="map">
+                <!-- Clean PNG. n.d.  -->
+                <sl-tooltip content="Hey! We're Clickable">
+                    <div class="ross_ice_shelf"></div>
+                </sl-tooltip>
+                <div class="dronning_maud_land"></div>
+                <div class="south_pole"></div>
+                <div class="ellsworth_land"></div>
+                <div class="princess_elizabeth_land"></div>
+                <sl-dialog label="Ross Ice Shelf" class="dialog-ross_ice_shelf">
+                    <p>
+                        The Ross ice shelf is the largest ice sheet in Antarctica. It is roughly the size of France. It
+                        boasts a nearly 600km wall of ice facing the sea front. Which ranges between 15 and 50 metres
+                        tall.
+                        Although it is estimated that 90% of the ice mass is below the water’s surface.
+                    </p>
+                    <!-- Wikipedia, n.d.a. -->
+                    <sl-button slot="footer" variant="primary" class="close-ross_ice_shelf">Close</sl-button>
+                </sl-dialog>
+                <sl-dialog label="Dronning Maud Land" class="dialog-dronning_maud_land">
+                    <p>
+                        Dronning Maud land is roughly 2.7 Million square km territory claimed as dependant territory of
+                        Norway. Hjalmar Riiser-Larsen was the first to land on Queen Land, in 1930. The territory was
+                        later
+                        claimed by Norway in 1939. Although it is now part of the Antarctic Treaty system.
+                    </p>
+                    <p>
+                        The territory is mostly dominated by the Antarctic ice sheet, although large the ice sheet does
+                        give
+                        way to mountain ranges which break through the ice. This provides breeding habitat to range of
+                        Antarctic birds.
+                    </p>
+                    <!-- Wikipedia, n.d.b. -->
+                    <sl-button slot="footer" variant="primary" class="close-dronning_maud_land">Close</sl-button>
+                </sl-dialog>
+                <sl-dialog label="South Pole" class="dialog-south_pole">
+                    <p>
+                        The South Pole is the southern most point of the Earth and situated at the site is the
+                        Amundsen-Scott South Pole Station. Which staffed year round since 1956, is a research centre for
+                        the
+                        area.
+                    </p>
+                    <p>
+                        The south Pole was first discovered by Roald Amundsen. Narrowly beating the ill-fated Captain
+                        Scott
+                        expedition by 34 days. Scott’s forward party of four later succumbed to the cold and starvation
+                        and
+                        perished on their return journey.
+                    </p>
+                    <!-- Wikipedia, n.d.c. -->
+                    <sl-button slot="footer" variant="primary" class="close-south_pole">Close</sl-button>
+                </sl-dialog>
+                <sl-dialog label="Ellsworth Land" class="dialog-ellsworth_land">
+                    <p>
+                        Ellsworth Land mostly comprised of Ice, although does have a group of scattered mountains. Known
+                        as
+                        the Ellsworth Mountains.
+                    </p>
+                    <p>
+                        The area was named for, and largely traversed by American Explorer Lincoln Ellsworth. But little
+                        is
+                        known of this region as few expeditions have yet to discover many of its secrets.
+                    </p>
+                    <!-- Wikipedia, n.d.d. -->
+                    <sl-button slot="footer" variant="primary" class="close-ellsworth_land">Close</sl-button>
+                </sl-dialog>
+                <sl-dialog label="Princess Elizabeth Land" class="dialog-princess_elizabeth_land">
+                    <p>
+                        Princess Elizabeth Land is claimed as an Australian Territory. Although this claim is not
+                        recognised
+                        by all.
+                    </p>
+                    <p>
+                        The territory was largely explored by Australian Explorer Sir Douglas Mawson.
+                    </p>
+                    <!-- Wikipedia, n.d.e. -->
+                    <sl-button slot="footer" variant="primary" class="close-princess_elizabeth_land">Close</sl-button>
+                </sl-dialog>
+
+                <sl-progress-bar value="0"></sl-progress-bar>
+            </div>
+        </section>
+        <section class="section s3">
+            <h2 class="h2_alt">Inhabitants</h2>
+
+            <div id="animated-thumbnails-gallery" class="image_gallery">
+                <a href="images/two_whales.jpg" class="href_gallery image_1">
+                    <img src="images/two_whales.jpg" class="image_1" alt="two whales image">
+                    <!-- Dipp, Elianne. 2020 -->
+                </a>
+                <a href="images/ice_berg_gallery.jpg" class="href_gallery image_2">
+                    <img src="images/ice_berg_gallery.jpg" class="image_2" alt="ice berg image">
+                    <!-- Pixabay. 2016. -->
+                </a>
+                <a href="images/penguin_with_babies.jpg" class="href_gallery image_3">
+                    <img src="images/penguin_with_babies.jpg" class="image_3" alt="image of penguin with two babies">
+                    <!-- The conversation. n.d -->
+                </a>
+                <a href="images/penguin_alone.jpg" class="href_gallery image_4">
+                    <img src="images/penguin_alone.jpg" class="image_4" alt="image of a penguin">
+                    <!-- van der Meulen, Jean. 2019 -->
+                </a>
+                <a href="images/penguin_with_baby.jpg" class="href_gallery image_5">
+                    <img src="images/penguin_with_baby.jpg" class="image_5" alt="image of a penguin with a baby">
+                    <!-- King, Robbie. 2022 -->
+                </a>
+                <a href="images/two_penguins.jpg" class="href_gallery image_6">
+                    <img src="images/two_penguins.jpg" class="image_6" alt="image of a two penguins">
+                    <!-- Asmussen, Rene. 2017 -->
+                </a>
+            </div>
+
+        </section>
+
+        <section class="section">
+            <h2 class="h2_alt">Explorers</h2>
+            <div class="carousel_container">
+                <div class="explorer_container">
+                    <sl-carousel pagination navigation mouse-dragging loop class="explorer_carousel">
+                        <sl-carousel-item>
+                            <img alt="Ranulph Fiennes" src="images/ranfiennes.webp" class="carousel-image">
+                            <!-- Shuttershock n.d. -->
+                        </sl-carousel-item>
+                        <sl-carousel-item>
+                            <img alt="Douglas Mawson" src="images/Mawson.jpg" class="carousel-image">
+                            <!-- Australian Scholarly Publishing n.d. -->
+                        </sl-carousel-item>
+                        <sl-carousel-item>
+                            <img alt="Sir Ernest Shackleton" src="images/Ernest_Shackleton.webp" class="carousel-image">
+                            <!-- History Extra n.d. -->
+                        </sl-carousel-item>
+                    </sl-carousel>
+                </div>
+                <div class="explorer_text">
+                    <h2>Ranulph Fiennes </h2>
+                    <p>After Attending the Mons Officer Cadet School, he was granted special permission to join the
+                        Royal
+                        Scots Greys. Which is where his father served and died during World War two. He later joined the
+                        Special Air Service and gained experience as a demolition’s expert. However, he was later
+                        dismissed
+                        for attempting to demolish a Bridge built for the 1967 film Dr. Dolittle. </p>
+                    <p>Sir Ranulph Fiennes is often touted as the worlds greatest living explorer. He has led
+                        expeditions up
+                        the White Nile in Africa. Led an Expedition with fellow SAS soldiers around the earth polar
+                        axis,
+                        known his Trans globe expedition. He then became the first to cross unsupported with fellow
+                        explorer
+                        Mike Stroud.
+                    </p>
+                    <!-- Wikipedia, n.d.f. -->
+                </div>
+            </div>
+        </section>
+        <section class="section s5">
+            <h2 class="h2_alt">Climate Change</h2>
+            <div class="climate_change_container">
+                <img src="images/climate-change-banner.avif" alt="climate change banner" class="climate-change-banner">
+                <div class="climate_text">
+                    <p>
+                        Unfortunately, due to our global dependence on fossil fuels and other green house gas emitters.
+                        The
+                        world is in a state of warming. And Antarctica is one of the fastest warming areas in the world.
+                        Summer Temperatures have increased by over 3 degrees between 1970 and 2022.
+                    </p>
+                    <p>
+                        Since the earth has warmed so much, the Southern Ocean has absorbed around 75 percent of the
+                        excess
+                        heat caused by humans. Penguin colonies have been observed to have shrunk and even disappear
+                        completely from some areas.
+                    </p>
+                    <p>
+                        This excess heat has also caused a steady decline in the ice sheet. And not only is the ice
+                        sheet in decline, but it is declining faster each year. Leaving the future of the frozen
+                        continent unclear.
+                    </p>
+                    <p>
+                        The image of the Mawson Sea depicts an satellite image taken in 1989, you’ll see with a large
+                        amount of sea ice. And a picture more recently in 2022 after the ice shelf collapsed. And since
+                        the ice has collapsed it led a discover of a previously unknown island in the Mawson Sea.
+                    </p>
+                </div>
+
+                <sl-image-comparer position="50" class="image_comparer">
+                    <img slot="before" src="images/ice1.webp" alt="ice image before" class="climate_ice_image">
+                    <img slot="after" src="images/ice2.webp" alt="ice image after" class="climate_ice_image">
+                </sl-image-comparer>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"
+        integrity="sha512-LGiXf+jHGTHcIybSsOWO3I/in+OObCkcEsWIZ7IyhzfD6RzD5qDUw2CK+JveuI7zTSEcDG//bIOvOpAJW2BWsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"
+        integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"
+        integrity="sha512-VBbe8aA3uiK90EUKJnZ4iEs0lKXRhzaAXL8CIHWYReUwULzxkOSxlNixn41OLdX0R1KNP23/s76YPyeRhE6P+Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/navBar.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/MapPoint.js"></script>
+    <script src="js/GeoMap.js"></script>
+    <script src="js/explorersText.js"></script>
+    <script src="js/Carousel.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
