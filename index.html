@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Justin Healy" />
+    <meta name="description" content="An Educational Website about Antarctica" />
+    <meta name="keywords"
+      content="Antarctica, Climate Change, Antarctic Explorers, Penguins" />
+
+
     <title>Antarctica</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css"
@@ -17,6 +23,7 @@
         integrity="sha512-GRxDpj/bx6/I4y6h2LE5rbGaqRcbTu4dYhaTewlS8Nh9hm/akYprvOTZD7GR+FRCALiKfe8u1gjvWEEGEtoR6g=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/ice_berg.png" />
 </head>
 
 <body>
@@ -47,18 +54,19 @@
             <img src="images/ice_berg2.png" alt="ice berg image 2" class="ice_berg2">
             <!-- Raw Pixel. n.d.b  -->
         </section>
-        <section class="section s2 fp-scrollable">
+        <section class="section s2">
             <div class="map_container">
                 <h2 class="h2">Geography</h2>
                 <img src="images/antarctica_map.png" alt="antarctica map" class="map">
                 <!-- Clean PNG. n.d.  -->
-                <sl-tooltip content="Hey! We're Clickable">
-                    <div class="ross_ice_shelf"></div>
-                </sl-tooltip>
+
+                <div class="ross_ice_shelf"></div>
                 <div class="dronning_maud_land"></div>
                 <div class="south_pole"></div>
                 <div class="ellsworth_land"></div>
-                <div class="princess_elizabeth_land"></div>
+                <sl-tooltip content="Hey! We're Clickable" class="tool_tip" trigger="manual">
+                    <div class="princess_elizabeth_land"></div>
+                </sl-tooltip>
                 <sl-dialog label="Ross Ice Shelf" class="dialog-ross_ice_shelf">
                     <p>
                         The Ross ice shelf is the largest ice sheet in Antarctica. It is roughly the size of France. It
@@ -137,27 +145,27 @@
 
             <div id="animated-thumbnails-gallery" class="image_gallery">
                 <a href="images/two_whales.jpg" class="href_gallery image_1">
-                    <img src="images/two_whales.jpg" class="image_1" alt="two whales image">
+                    <img src="images/two_whales.jpg" class="image_1" alt="Two Whales Under the sea">
                     <!-- Dipp, Elianne. 2020 -->
                 </a>
                 <a href="images/ice_berg_gallery.jpg" class="href_gallery image_2">
-                    <img src="images/ice_berg_gallery.jpg" class="image_2" alt="ice berg image">
+                    <img src="images/ice_berg_gallery.jpg" class="image_2" alt="Floating Ice Berg">
                     <!-- Pixabay. 2016. -->
                 </a>
                 <a href="images/penguin_with_babies.jpg" class="href_gallery image_3">
-                    <img src="images/penguin_with_babies.jpg" class="image_3" alt="image of penguin with two babies">
+                    <img src="images/penguin_with_babies.jpg" class="image_3" alt="Penguin with babies">
                     <!-- The conversation. n.d -->
                 </a>
                 <a href="images/penguin_alone.jpg" class="href_gallery image_4">
-                    <img src="images/penguin_alone.jpg" class="image_4" alt="image of a penguin">
+                    <img src="images/penguin_alone.jpg" class="image_4" alt="Penguin">
                     <!-- van der Meulen, Jean. 2019 -->
                 </a>
                 <a href="images/penguin_with_baby.jpg" class="href_gallery image_5">
-                    <img src="images/penguin_with_baby.jpg" class="image_5" alt="image of a penguin with a baby">
+                    <img src="images/penguin_with_baby.jpg" class="image_5" alt="Image of a Penguin with a baby">
                     <!-- King, Robbie. 2022 -->
                 </a>
                 <a href="images/two_penguins.jpg" class="href_gallery image_6">
-                    <img src="images/two_penguins.jpg" class="image_6" alt="image of a two penguins">
+                    <img src="images/two_penguins.jpg" class="image_6" alt="Image of a two Penguins">
                     <!-- Asmussen, Rene. 2017 -->
                 </a>
             </div>

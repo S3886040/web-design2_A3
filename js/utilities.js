@@ -1,3 +1,4 @@
+let toolTipShown = 0;
 // fullpage js controller
 new fullpage("#fullpage", {
   //options here
@@ -9,6 +10,9 @@ new fullpage("#fullpage", {
     setCurrentPage();
     if (destination.anchor == "Geography") {
       runAnimationsGeo();
+      if (toolTipShown < 3) {
+        showToolTip();
+      }
     }
   },
   scrollOverflow: true,
@@ -19,6 +23,18 @@ lightGallery(document.getElementById("animated-thumbnails-gallery"), {
   thumbnail: true,
   plugins: [lgThumbnail],
 });
+
+function showToolTip() {
+  setTimeout(() => {
+    let toolTip = document.querySelector(".tool_tip");
+    toolTip.show();
+    toolTipShown += 1;
+  }, "1000");
+  setTimeout(() => {
+    let toolTip = document.querySelector(".tool_tip");
+    toolTip.hide();
+  }, "4000");
+}
 
 // Accesses and initiates Geography section animations
 function runAnimationsGeo() {

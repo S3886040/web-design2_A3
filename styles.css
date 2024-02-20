@@ -302,14 +302,15 @@ sl-dialog::part(overlay) {
 }
 
 .image_6 {
-  max-width: 100%;
+  max-width: 90%;
+  min-height: 100%;
   grid-area: right / right / bright / bright;
 }
 
 /* ==========Explorers Section============= */
 .carousel_container {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   grid-template-areas: "carousel text-area";
 }
 
@@ -317,11 +318,6 @@ sl-dialog::part(overlay) {
   padding-bottom: 90px;
   grid-area: carousel;
 }
-
-
-/* .explorer_carousel {
-  height: 100%;
-} */
 
 sl-carousel-item {
   --aspect-ratio: 9 /16;

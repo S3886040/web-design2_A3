@@ -32,7 +32,7 @@ navItems.forEach(function (item) {
 });
 
 let hamburger = document.querySelector(".hamburger");
-// Event Listener for hamburber menu toggle
+// Event Listener for hamburger menu toggle
 hamburger.addEventListener("click", function () {
   navToggle();
 });
